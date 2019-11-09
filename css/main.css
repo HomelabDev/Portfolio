@@ -1,0 +1,131 @@
+/*Global*/
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+body.lightmode{
+    transition: 1s ease-in;
+    background-color: white;
+    color: black;
+}
+
+section.blur{
+    transition: 0.7s;
+    filter: blur(8px);
+}
+
+
+
+a{
+    background-color: #8026d4;
+    margin: 50px;
+    margin-top: 100px;
+    position: absolute;
+    z-index: +1;
+    font-size: 30px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Big Shoulders Text', cursive;
+}
+
+a:hover{
+    transition: 0.7s;
+    background-image: linear-gradient(orange, red);
+}
+/*non Global*/
+
+
+#header{
+    position: fixed;
+    font-size: 43px;
+    margin-left: 100px;
+    margin-top: 200px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+#header2{
+    position: fixed;
+    font-size: 43px;
+    margin-left: 410px;
+    margin-top: 200px;
+    background-image:linear-gradient(orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+
+#svg_image{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 60%;
+}
+
+#menu{
+    display: none;
+}
+
+#menu.visible{
+    transition: 0.7s;
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+    color: white;
+    pointer-events: none;
+}
+
+#text{
+    position: fixed;
+    margin-top: -300px;
+    margin-left: 100px;
+    border: #8026d4 5px solid;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+#menuLink{
+    display: none;
+
+
+}
+
+#menuLink.visible{
+    position: relative;
+    transition: 0.7s;
+    display: flex;
+
+}
+
+
+
+/*often used*/
+p{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 17px;
+}
+
+button{
+    position: relative;
+    z-index: +1;
+    background-color: #8026d4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+    border-radius: 5px;
+    font-family: 'Big Shoulders Text', cursive;
+}
