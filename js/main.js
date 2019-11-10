@@ -1,10 +1,13 @@
-//lightmode
-var buttonLightmode = document.querySelector("#lightmode_button");
-var element = document.querySelector("body");
+let isInLightmode = false;
+const buttonLightmode = document.querySelector("#lightmode_button");
+const element = document.querySelector("body");
 
 buttonLightmode.addEventListener("click", function(){
-  element.classList.toggle("lightmode");
-  buttonLightmode.classList.toggle("darkmode");
+    element.classList.toggle("lightmode");
+    buttonLightmode.classList.toggle("darkmode");
+    isInLightmode = !isInLightmode;
+    
+    buttonLightmode.innerHTML = isInLightmode ? "Switch to Dark Mode" : "Switch to Light Mode";
 });
 
 //menu
